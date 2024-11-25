@@ -34,6 +34,11 @@ Also featuring an AntiPanic! Button, dissociating your username from your device
 - [Constanza Ros](mailto:constanzaros1127@gmail.com) | UX/UI & Design
 
 - [Sebastián Pérez](mailto:sebastianperez1608@gmail.com) | UX/UI & Design
+
+
+
+Special Thanks to [SimplyBLG](https://www.github.com/SimplyBLGDev) <3
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
