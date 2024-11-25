@@ -13,7 +13,7 @@
 
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
-An app to have anonymous conversations with strangers securely, in Serendipia, no one knows who are you.
+An app to have anonymous conversations with strangers securely, in Serendipia, no one knows who you are.
 
 Users, Groups and Messages are deleted automatically after certain time.
 Also featuring an AntiPanic! Button, dissociating your username from your device.
@@ -29,7 +29,7 @@ Also featuring an AntiPanic! Button, dissociating your username from your device
 
 - [Mayra Luccisano](https://github.com/maymay031222/) | Programming Assist
 
-- [Tobías D. Gómez](https://www.github.com/tobiloler) | Programming Assist
+- [Tobías D. Gómez](https://www.github.com/tobigd) | Programming Assist
 
 - [Constanza Ros](mailto:constanzaros1127@gmail.com) | UX/UI & Design
 
