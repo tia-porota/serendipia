@@ -2,10 +2,10 @@ import { ActivityIndicator, FlatList, Pressable, StyleSheet, Text, View } from "
 import { Link } from "expo-router";
 import findGroups from "../../functions/findGroups";
 import { useEffect, useState } from "react";
-import { useUserData } from "../../functions/findUser"; // Asegúrate de importar el hook aquí
+import { useUserData } from "../../functions/findUser"; 
 import { Add, NextIcon } from "../utils/icons";
 function GroupFlatList() {
-  const { user, loading: userLoading } = useUserData(); // Obtener datos del usuario
+  const { user, loading: userLoading } = useUserData(); 
   const [groupData, setGroupData] = useState([]);
   const [loading, setLoading] = useState(true);
 

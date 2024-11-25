@@ -1,5 +1,5 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { StyleSheet, Text, View, Image, Alert, BackHandler, Pressable } from "react-native";
+
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 
 import { useRouter, Link } from "expo-router";
 import { useUserData } from "../functions/findUser";

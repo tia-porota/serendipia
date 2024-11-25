@@ -1,8 +1,8 @@
-import { View, Text, TextInput, StyleSheet, Pressable, ActivityIndicator } from "react-native";
+import { View, TextInput, StyleSheet, Pressable } from "react-native";
 import { SendIcon } from "../utils/icons";
 import { useState } from "react";
 import { conString } from "../../functions/backInfo";
-import { useUserData } from "../../functions/findUser";
+
 
 
 

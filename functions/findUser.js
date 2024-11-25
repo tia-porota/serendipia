@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { conString } from "./backInfo";
-// Función para obtener los datos del usuario desde la API
+
 
 const getUserData = async () => {
   try {
@@ -20,12 +20,12 @@ const getUserData = async () => {
       throw new Error("No ID found in AsyncStorage");
     }
   } catch (error) {
-    //console.error("Error in getUserData:", error);
+    
     throw error;
   }
 };
 
-// Hook personalizado para manejar la lógica de obtener el usuario
+
 export const useUserData = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -44,7 +44,7 @@ export const useUserData = () => {
     };
 
     fetchData();
-  }, []); // Se ejecuta solo una vez cuando el componente se monta
+  }, []);
 
   return { user, loading, error };
 };

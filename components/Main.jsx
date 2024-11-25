@@ -1,8 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
-import { ChatLink } from './chatComponents/chatLink'
+import { View } from "react-native";
 import { PublicGroups } from "./groups/publicGroups";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import {useEffect} from 'react'
 import {Stack} from 'expo-router'
 export function Main() {
   

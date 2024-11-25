@@ -1,5 +1,4 @@
 import {View, Text, StyleSheet, Pressable, Image} from 'react-native'
-import { SendIcon } from '../utils/icons'
 import { Link, Stack } from 'expo-router'
 
 export function NewLogo(){

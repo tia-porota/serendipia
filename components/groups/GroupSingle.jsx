@@ -3,7 +3,6 @@ import {conString} from '../../functions/backInfo';
 import {useState, useEffect} from 'react'
 import SendBar from '../chatComponents/sendBar'
 import {Stack} from 'expo-router'
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { useUserData } from '../../functions/findUser';
 import MsgSingle from "./MsgSingle"
 export default function GroupSingle({id}){
