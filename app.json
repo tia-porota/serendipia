@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "seren",
+    "name": "Serendipia",
     "slug": "seren",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
-    "scheme":"seren",
+    "scheme": "seren",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/newLogo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,15 +17,24 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/favicon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.echo.serendipia"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "90d52c67-3e32-49bd-8c81-eee25c49d717"
+      }
+    }
   }
 }

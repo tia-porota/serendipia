@@ -35,7 +35,7 @@ export function IsUser() {
   const router = useRouter();
 
   return (
-    <View style={{backgroundColor:"red"}}>
+    <View>
       {user ? (
         <View >
         <Text  >{user.user}</Text>
@@ -77,7 +77,7 @@ export function Seren(){
     <Link href={"/"} asChild>
     <Pressable style={styles.bar}>
   
-  <Image style={{height:50, width:180}} source={require('../assets/newLogo.png')}/>
+  <Image style={{height:50, width:200}} source={require('../assets/newLogo.png')}/>
   
   </Pressable>
   </Link>)

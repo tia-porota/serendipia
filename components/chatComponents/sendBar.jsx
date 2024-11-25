@@ -9,6 +9,31 @@ import { useUserData } from "../../functions/findUser";
 
 export default function SendBar({idGroup, userName}) {
   const [text, useText] = useState("");  
+  function send(userName, msg,idGroup){
+    if (text!=""){
+    const send = JSON.stringify({text:msg,sender:userName,});
+    let url = conString+"groups/msgs/"+idGroup
+    fetch(url,{
+      method:"PUT",
+      headers: { "Content-Type": "application/json" },
+      body: send
+  
+    })
+    url = conString+"public/msgs/"+idGroup
+    fetch(url,{
+      method:"PUT",
+      headers: { "Content-Type": "application/json" },
+      body: send
+  
+    })
+  }
+    else {
+      Alert.alert("Error","Ingrese un mensaje")
+    }
+    
+
+
+  }
   return (
     <View style={styles.sendBar}>
       <View style={{ flexGrow: 1 }}>
@@ -22,20 +47,7 @@ export default function SendBar({idGroup, userName}) {
   );
 }
 
-function send(userName, msg,idGroup){
-  if (text!=""){
-  const send = JSON.stringify({text:msg,sender:userName,});
-  const url = conString+"groups/msgs/"+idGroup
-  fetch(url,{
-    method:"PUT",
-    headers: { "Content-Type": "application/json" },
-    body: send
 
-  })}
-  else {
-    Alert.alert("Error","Ingrese un mensaje")
-  }
-}
 
 
 

@@ -1,14 +1,10 @@
-import {View} from 'react-native'
 import { Stack, usePathname} from "expo-router";
-import { TopBar } from "../components/topbar";
 import { BottomBar } from "../components/bottombar";
-import  SendBar  from "../components/chatComponents/sendBar"
 import {Seren, IsUser} from '../components/topbar'
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { ReloadProvider } from '../functions/reload';
+import {LogBox} from 'react-native'
 
 export default function Layout(){
-    
+    LogBox.ignoreAllLogs();
     return (
         <>
             <Stack screenOptions={{

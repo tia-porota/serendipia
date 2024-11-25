@@ -4,7 +4,7 @@ import { Link, Stack } from 'expo-router'
 
 export function NewLogo(){
     return(
-        <Stack.Screen options={{headerRight:()=>{},headerTitle:() => <Image style={{height:30, width:220}} source={require('../../assets/newLogo.png')}/>}}/>
+        <Stack.Screen options={{headerRight:()=>{},headerTitle:() => <Image style={{height:50, width:200}} source={require('../../assets/newLogo.png')}/>}}/>
     )
 }
 export default function FormTemplate({btn1,btn2,btn3,btn4,btn5,form}){
