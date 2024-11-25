@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { IP, PORT } from "./backInfo";
+import { conString } from "./backInfo";
 // Función para obtener los datos del usuario desde la API
 
 const getUserData = async () => {
   try {
     const id = await AsyncStorage.getItem("idUser");    
     if (id) {
-      const url = 'http://'+IP+':'+PORT+'/users/'+id;
+      const url = conString+'users/'+id;
       const response = await fetch(url, {
         method: "GET",
       });

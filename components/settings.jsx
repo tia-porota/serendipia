@@ -17,7 +17,7 @@ export default function Settings(){
 
         }}>PANIC! Button</Text>
             </Pressable>
-            <Pressable onPress={()=>{Linking.openURL('https://github.com/maymay031222/serendipia/blob/verop/tyc.md')}}>
+            <Pressable onPress={()=>{Linking.openURL('https://github.com/tia-porota/serendipia/blob/verop/tyc.md')}}>
             <Text style={{textAlign:"center", paddingTop:10,marginTop:20, color:"blue"}}>
                 Términos y Condiciones
             </Text>

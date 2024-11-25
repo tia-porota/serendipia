@@ -1,4 +1,4 @@
-import { conString, IP, PORT } from "./backInfo";
+import { conString } from "./backInfo";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export const saveGroup = async (name) => {
@@ -23,7 +23,7 @@ export const saveGroup = async (name) => {
 
   result = await result.json()
   code = result._id;
-  url = 'http://'+IP+':'+PORT+'/users/';
+  url = conString+'users/';
 
   send = JSON.stringify({ id: userId, groupCode: code });
   result = await fetch(url, {

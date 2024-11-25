@@ -7,10 +7,10 @@ export default function MainScreen(){
     const router = useRouter();
     return(
         <View style={styles.container}>
-            <Stack.Screen options={{headerRight:()=>{},headerTitle:() => <Image style={{height:30, width:220}} source={require('../assets/logo.png')}/>}}/>
+            <Stack.Screen options={{headerRight:()=>{},headerTitle:() => <Image style={{height:30, width:220}} source={require('../assets/newLogo.png')}/>}}/>
             <View style={{flexDirection:"row", marginHorizontal:20}}>
             
-            <Text> Al ingresar indico que soy mayor de 18 anos y he leído los <Pressable onPress={()=>{Linking.openURL('https://github.com/maymay031222/serendipia/blob/verop/tyc.md')}}><Text style={{color:"blue"}}>términos y condiciones</Text></Pressable> de Serendipia</Text>
+            <Text> Al ingresar indico que soy mayor de 18 años y he leído los <Pressable onPress={()=>{Linking.openURL('https://github.com/maymay031222/serendipia/blob/verop/tyc.md')}}><Text style={{color:"blue"}}>términos y condiciones</Text></Pressable> de Serendipia</Text>
             </View>
             <Pressable style={styles.btn} onPress={()=>{router.replace('/form/first')}}>
                 <Text style={{textAlign:"center",fontSize:18}}>INGRESAR</Text>

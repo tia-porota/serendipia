@@ -35,10 +35,10 @@ export function IsUser() {
   const router = useRouter();
 
   return (
-    <View>
+    <View style={{backgroundColor:"red"}}>
       {user ? (
-        <View>
-        <Text>{user.user}</Text>
+        <View >
+        <Text  >{user.user}</Text>
         
         </View> 
       ) : (
@@ -63,8 +63,8 @@ export const styles = StyleSheet.create({
   },
   bar: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    paddingHorizontal: 10,
+    justifyContent:"space-around",
+    
   },
   textSeren: {
     fontWeight: "bold",
@@ -77,7 +77,7 @@ export function Seren(){
     <Link href={"/"} asChild>
     <Pressable style={styles.bar}>
   
-  <Image style={{height:30, width:220}} source={require('../assets/logo.png')}/>
+  <Image style={{height:50, width:180}} source={require('../assets/newLogo.png')}/>
   
   </Pressable>
   </Link>)

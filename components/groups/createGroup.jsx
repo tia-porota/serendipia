@@ -9,15 +9,23 @@ export default function Register() {
   const [addG,setAddG] = useState("");
   useEffect(()=>{console.log("render")},[])
   function save() {
+    if (name!=""){
     saveGroup(name);
     router.replace("/private")
-    Alert.alert("Éxito","Grupo creado con éxito")
+    Alert.alert("Éxito","Grupo creado con éxito. Se eliminará en 24 horas")
+    } else {
+      Alert.alert("Error","Ingrese un nombre al grupo")
+    }
   }
   function add(){
+    if (addG!=""){
     addGroup(addG);
     router.replace("/private")
     Alert.alert("Éxito","Unión exitosa")
-
+    }
+    else {
+      Alert.alert("Error","Ingrese un código de grupo")
+    }
   }
 
   return (

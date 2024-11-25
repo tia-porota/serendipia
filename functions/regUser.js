@@ -1,7 +1,7 @@
-import { IP, PORT } from "./backInfo";
+import { conString } from "./backInfo";
 const saveUser = async (user, pass) => {
   const send = JSON.stringify({ user, pass });
-  const url = 'http://'+IP+':'+PORT+'/users/';
+  const url = conString+'users/';
 
   let result = await fetch(url, {
     method: "post",

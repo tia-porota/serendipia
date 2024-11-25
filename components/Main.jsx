@@ -3,13 +3,13 @@ import { ChatLink } from './chatComponents/chatLink'
 import { PublicGroups } from "./groups/publicGroups";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import {useEffect} from 'react'
-import {useNavigation} from 'expo-router'
+import {Stack} from 'expo-router'
 export function Main() {
-  const insets = useSafeAreaInsets();
-  const navigation= useNavigation();
+  
   
   return (
     <View style={{paddingHorizontal: 20}}>
+      <Stack.Screen  options={{headerBackVisible:false}}/>
     <PublicGroups />
     </View>
   );
